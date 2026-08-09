@@ -29,6 +29,6 @@ Hands-on Splunk detection engineering lab, organised around architecture, detect
 |----|-----------|--------|--------|
 | DET-001 | Process Creation Baseline | ✅ | T1059 |
 | DET-002 | Unusual Command Prompt Execution | ✅ | T1059.003 |
-| DET-003 | Privileged Logons | 🚧 | T1078 |
+| DET-003 | Privileged Logons | ✅ | T1078 |
 | DET-004 | Network Share Access | ⏳ | T1021.002 |
 | DET-005 | Credential Validation | ⏳ | T1110 |
