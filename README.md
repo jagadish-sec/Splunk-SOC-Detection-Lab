@@ -16,7 +16,7 @@ Hands-on Splunk detection engineering lab, organised around architecture, detect
 | Phase | Description | Status |
 |--------|-------------|--------|
 | Phase 1 | Lab Setup & Environment Baseline | ✅ |
-| Phase 2 | Detection Engineering | 🟡 |
+| Phase 2 | Detection Engineering | ✅ |
 | Phase 3 | Threat Hunting | ⏳ |
 | Phase 4 | Dashboards | ⏳ |
 | Phase 5 | Incident Reports | ⏳ |
