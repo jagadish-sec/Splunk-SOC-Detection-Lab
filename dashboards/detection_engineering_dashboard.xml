@@ -1,0 +1,132 @@
+<dashboard version="1.1" theme="dark">
+  <label>Detection Engineering</label>
+  <description>Detection coverage based on the exported IDS, Windows, SMB, and process telemetry lookups.</description>
+
+  <row>
+    <panel>
+      <title>Alert Severity</title>
+      <chart>
+        <search>
+          <query>| inputlookup alert_severity.csv | rename "alert.severity" AS severity | chart sum(count) AS detections by severity</query>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Attack Categories</title>
+      <chart>
+        <search>
+          <query>| inputlookup attack_maj_category.csv | rename "alert.category" AS category | eval category=if(category="", "Unclassified", category) | sort - count | head 10</query>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.axisTitleX.text">Detections</option>
+        <option name="charting.axisTitleY.text">Category</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Suricata Event Types</title>
+      <chart>
+        <search>
+          <query>| inputlookup event_type.csv | sort - count | head 10</query>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.axisTitleY.text">Events</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Top IDS Signatures</title>
+      <chart>
+        <search>
+          <query>| inputlookup Top_IDS_Signatures.csv | rename "alert.signature" AS signature | sort - count | head 10</query>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.axisTitleX.text">Alerts</option>
+      </chart>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Top Attack Source IPs</title>
+      <chart>
+        <search>
+          <query>| inputlookup top_attack_ip.csv | sort - count | head 10</query>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.axisTitleX.text">Alerts</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Most Targeted Hosts</title>
+      <chart>
+        <search>
+          <query>| inputlookup Most_Attacked.csv | stats count AS alerts by dest_ip | sort - alerts | head 10</query>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.axisTitleX.text">Alerts</option>
+      </chart>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Windows Logons</title>
+      <chart>
+        <search>
+          <query>| inputlookup Windows_Logons.csv | eval identity=host . " / " . Account_Name | chart sum(count) AS logons by identity | sort - logons | head 10</query>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Windows Security Events</title>
+      <chart>
+        <search>
+          <query>| inputlookup Windows_Security_Event_Analysis.csv | sort - count | head 10</query>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.axisTitleY.text">Events</option>
+      </chart>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>SMB Activity</title>
+      <table>
+        <search>
+          <query>| inputlookup SMB_Activity.csv | sort - count | head 20 | rename src_ip AS "Source IP", dest_ip AS "Destination IP", count AS Connections</query>
+        </search>
+      </table>
+    </panel>
+    <panel>
+      <title>Share Access Investigation</title>
+      <table>
+        <search>
+          <query>| inputlookup share_accessed__.csv | eval evidence_type="Share accessed", subject=Share_Name | fields evidence_type subject count | append [| inputlookup hosts_inv_shares.csv | eval evidence_type="Host inventory", subject=host . " → " . Share_Name | fields evidence_type subject count] | append [| inputlookup prilaged_access.csv | eval evidence_type="Privileged access", subject=Account_Name . " @ " . host | fields evidence_type subject count] | sort - count | rename evidence_type AS "Evidence type", subject AS Subject, count AS Events</query>
+        </search>
+      </table>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Suspicious CMD Execution</title>
+      <table>
+        <search>
+          <query>| inputlookup CMD_sus.csv | table _time host Account_Name New_Process_Name Process_Command_Line Creator_Process_Name | rename _time AS Time, host AS Host, Account_Name AS Account, New_Process_Name AS "New process", Process_Command_Line AS "Command line", Creator_Process_Name AS "Parent process" | head 50</query>
+        </search>
+      </table>
+    </panel>
+    <panel>
+      <title>PHP CGI Process Detection</title>
+      <table>
+        <search>
+          <query>| inputlookup php-cgi_sus.csv | table _time host Account_Name New_Process_Name Process_Command_Line ComputerName | rename _time AS Time, host AS Host, Account_Name AS Account, New_Process_Name AS "New process", Process_Command_Line AS "Command line", ComputerName AS Computer | head 50</query>
+        </search>
+      </table>
+    </panel>
+  </row>
+</dashboard>
