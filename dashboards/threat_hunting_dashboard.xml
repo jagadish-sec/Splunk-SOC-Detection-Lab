@@ -1,0 +1,102 @@
+<dashboard version="1.1" theme="dark">
+  <label>Threat Hunting</label>
+  <description>Analyst investigation view correlating victim hosts, attack sources, Windows activity, SMB evidence, and suspicious process execution from Phase 3 hunts.</description>
+
+  <row>
+    <panel>
+      <title>Top Victim Hosts</title>
+      <chart>
+        <search>
+          <query>| inputlookup Most_Attacked.csv | stats count AS alerts by dest_ip | sort - alerts | head 10</query>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.axisTitleX.text">Alerts</option>
+        <option name="charting.axisTitleY.text">Victim host</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Top Attack Sources</title>
+      <chart>
+        <search>
+          <query>| inputlookup top_attack_ip.csv | sort - count | head 10</query>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.axisTitleX.text">Alerts</option>
+        <option name="charting.axisTitleY.text">Source IP</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Attack Timeline</title>
+      <chart>
+        <search>
+          <query>| inputlookup attack_timeline.csv | eval _time=strptime(_time, "%Y-%m-%dT%H:%M:%S%z") | timechart span=2m sum(event_count) AS hunt_events</query>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.axisTitleY.text">Hunt events</option>
+      </chart>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>Authentication Investigation</title>
+      <chart>
+        <search>
+          <query>| inputlookup Windows_Logons.csv | eval identity=host . " / " . Account_Name | stats sum(count) AS logons by identity | sort - logons | head 10</query>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.axisTitleX.text">Logons</option>
+        <option name="charting.axisTitleY.text">Host / account</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Windows Security Investigation</title>
+      <chart>
+        <search>
+          <query>| inputlookup Windows_Security_Event_Analysis.csv | sort - count | head 10</query>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.axisTitleX.text">Windows Event ID</option>
+        <option name="charting.axisTitleY.text">Events</option>
+      </chart>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>SMB Investigation</title>
+      <table>
+        <search>
+          <query>| inputlookup SMB_Activity.csv | sort - count | head 20 | rename src_ip AS "Source IP", dest_ip AS "Destination IP", count AS Connections</query>
+        </search>
+      </table>
+    </panel>
+    <panel>
+      <title>Share Access Investigation</title>
+      <table>
+        <search>
+          <query>| inputlookup share_accessed__.csv | eval evidence_type="Share accessed", subject=Share_Name | fields evidence_type subject count | append [| inputlookup hosts_inv_shares.csv | eval evidence_type="Host inventory", subject=host . " → " . Share_Name | fields evidence_type subject count] | append [| inputlookup prilaged_access.csv | eval evidence_type="Privileged access", subject=Account_Name . " @ " . host | fields evidence_type subject count] | sort - count | rename evidence_type AS "Evidence type", subject AS Subject, count AS Events</query>
+        </search>
+      </table>
+    </panel>
+  </row>
+
+  <row>
+    <panel>
+      <title>CMD Process Investigation</title>
+      <table>
+        <search>
+          <query>| inputlookup CMD_sus.csv | table _time host Account_Name New_Process_Name Process_Command_Line Creator_Process_Name | rename _time AS Time, host AS Host, Account_Name AS Account, New_Process_Name AS "New process", Process_Command_Line AS "Command line", Creator_Process_Name AS "Parent process" | head 50</query>
+        </search>
+      </table>
+    </panel>
+    <panel>
+      <title>PHP-CGI Investigation</title>
+      <table>
+        <search>
+          <query>| inputlookup php-cgi_sus.csv | table _time host Account_Name New_Process_Name Process_Command_Line ComputerName | rename _time AS Time, host AS Host, Account_Name AS Account, New_Process_Name AS "New process", Process_Command_Line AS "Command line", ComputerName AS Computer | head 50</query>
+        </search>
+      </table>
+    </panel>
+  </row>
+</dashboard>
