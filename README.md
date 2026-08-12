@@ -122,7 +122,7 @@ index=botsv1
 | sort - count
 ```
 
-The result confirmed a functioning `botsv1` index with enough telemetry to perform detection engineering and threat-hunting exercises. See [labnotes.md](labnotes.md) for the baseline notes.
+The result confirmed a functioning `botsv1` index with enough telemetry to perform detection engineering and threat-hunting exercises. See [labnotes.md](labnotes/) for the baseline notes.
 
 ---
 
