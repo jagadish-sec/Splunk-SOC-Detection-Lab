@@ -1,0 +1,109 @@
+<dashboard version="1.1" theme="dark">
+<label>Executive SOC Overview</label>
+<description>Centralized operational view of security activity across network telemetry, IDS alerts, Windows Security logs, and HTTP traffic.</description>
+<row>
+<panel>
+<title>Total Events</title>
+<single>
+<search>
+<query>| inputlookup Total_Events.csv | rename "Total Events" AS total_events | stats max(total_events) AS value</query>
+</search>
+<option name="useThousandSeparators">true</option>
+</single>
+</panel>
+<panel>
+<title>IDS Alerts</title>
+<single>
+<search>
+<query>| inputlookup Total_IDS_Alerts.csv | rename "IDS Alerts" AS ids_alerts | stats max(ids_alerts) AS value</query>
+</search>
+<option name="useThousandSeparators">true</option>
+</single>
+</panel>
+<panel>
+<title>Windows Events</title>
+<single>
+<search>
+<query>| inputlookup Windows_Events.csv | rename "Windows Events" AS windows_events | stats max(windows_events) AS value</query>
+</search>
+<option name="useThousandSeparators">true</option>
+</single>
+</panel>
+<panel>
+<title>HTTP Requests</title>
+<single>
+<search>
+<query>| inputlookup HTTP_Requests.csv | rename "HTTP Requests" AS http_requests | stats max(http_requests) AS value</query>
+</search>
+<option name="useThousandSeparators">true</option>
+</single>
+</panel>
+</row>
+<row>
+<panel>
+<title>Event Timeline</title>
+<chart>
+<search>
+<query>| inputlookup Events_Timeline.csv | eval _time=strptime(_time, "%Y-%m-%dT%H:%M:%S.%3N%z") | timechart span=30m sum(count) AS events</query>
+</search>
+<option name="charting.chart">line</option>
+<option name="charting.axisTitleY.text">Events</option>
+</chart>
+</panel>
+<panel>
+<title>Top Source IPs</title>
+<chart>
+<search>
+<query>| inputlookup Top_Source_IPs.csv | sort - count | head 10</query>
+</search>
+<option name="charting.chart">bar</option>
+<option name="charting.axisTitleX.text">Events</option>
+<option name="charting.axisTitleY.text">Source IP</option>
+</chart>
+</panel>
+<panel>
+<title>Top Destination IPs</title>
+<chart>
+<search>
+<query>| inputlookup Top_Destination_IPs.csv | sort - count | head 10</query>
+</search>
+<option name="charting.chart">bar</option>
+<option name="charting.axisTitleX.text">Events</option>
+<option name="charting.axisTitleY.text">Destination IP</option>
+</chart>
+</panel>
+</row>
+<row>
+<panel>
+<title>Alert Severity</title>
+<chart>
+<search>
+<query>| inputlookup alert_severity.csv | rename "alert.severity" AS severity | chart sum(count) AS detections by severity</query>
+</search>
+<option name="charting.chart">pie</option>
+<option name="charting.legend.placement">right</option>
+</chart>
+</panel>
+<panel>
+<title>Top IDS Signatures</title>
+<chart>
+<search>
+<query>| inputlookup Top_IDS_Signatures.csv | rename "alert.signature" AS signature | sort - count | head 10</query>
+</search>
+<option name="charting.chart">bar</option>
+<option name="charting.axisTitleX.text">Alerts</option>
+</chart>
+</panel>
+<panel>
+<title>Authentication Overview</title>
+<chart>
+<search>
+<query>| inputlookup Authentication_Overview.csv | sort - count | head 10</query>
+</search>
+<option name="charting.chart">column</option>
+<option name="charting.axisTitleX.text">Windows Event ID</option>
+<option name="charting.axisTitleY.text">Events</option>
+</chart>
+</panel>
+</row>
+</dashboard>
