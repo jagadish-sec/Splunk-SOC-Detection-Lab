@@ -1,0 +1,15 @@
+"alert.category",count
+"",743
+"Web Application Attack",250
+"Attempted Information Leak",130
+"A Network Trojan was detected",104
+"Generic Protocol Command Decode",52
+"Attempted Administrator Privilege Gain",36
+"access to a potentially vulnerable web application",18
+"Attempted Denial of Service",13
+"Misc activity",6
+"Information Leak",2
+"Misc Attack",2
+"Potential Corporate Privacy Violation",2
+"Detection of a Network Scan",1
+"Potentially Bad Traffic",1

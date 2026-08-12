@@ -1,0 +1,1783 @@
+"Account_Domain","Account_Name",ComputerName,"Creator_Process_ID",EventCode,EventType,Keywords,LogName,"Logon_ID",Message,"New_Process_ID","New_Process_Name",OpCode,"Process_Command_Line",RecordNumber,"Security_ID",SourceName,TaskCategory,"Token_Elevation_Type",Type,"_raw","_time",eventtype,host,index,linecount,punct,source,sourcetype,"splunk_server","splunk_server_group",tag,"tag::eventtype"
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x844
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x844,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28878,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 03:16:27 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28878
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x844
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:46:27.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xd7c
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xd7c,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28253,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:46:38 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28253
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xd7c
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:16:38.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xf9c
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xf9c,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28251,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:46:28 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28251
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xf9c
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:16:28.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x760
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x760,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28248,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:46:19 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28248
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x760
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:16:19.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x4b8
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x4b8,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28247,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:46:19 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28247
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x4b8
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:16:19.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xf38
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xf38,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28234,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:46:08 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28234
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xf38
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:16:08.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x7a4
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x7a4,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28233,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:46:08 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28233
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x7a4
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:16:08.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x5b8
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x5b8,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28231,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:59 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28231
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x5b8
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:59.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xd48
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xd48,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28230,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:59 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28230
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xd48
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:59.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xa64
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xa64,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28211,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:49 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28211
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xa64
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:49.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x9cc
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x9cc,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28210,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:49 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28210
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x9cc
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:49.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x914
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x914,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28209,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:49 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28209
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x914
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:49.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x460
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x460,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28208,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:38 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28208
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x460
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:38.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x8f4
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x8f4,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28207,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:38 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28207
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x8f4
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:38.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xc78
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xc78,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28206,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:38 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28206
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xc78
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:38.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x3cc
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x3cc,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28204,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:28 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28204
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x3cc
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:28.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x524
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x524,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28203,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:28 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28203
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x524
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:28.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xdfc
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xdfc,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28202,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:28 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28202
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xdfc
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:28.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x814
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x814,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28201,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:18 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28201
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x814
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:18.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x8cc
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x8cc,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28200,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:18 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28200
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x8cc
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:18.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xc18
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xc18,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28199,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:18 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28199
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xc18
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:18.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x718
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x718,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28198,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:18 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28198
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x718
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:18.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xcfc
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xcfc,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28197,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:45:18 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28197
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xcfc
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:15:18.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x63c
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x63c,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28117,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:40:48 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28117
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x63c
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:10:48.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x73c
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x73c,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28116,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:40:48 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28116
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x73c
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:10:48.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x750
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x750,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28115,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:40:48 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28115
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x750
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:10:48.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xf8c
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xf8c,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28114,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:40:48 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28114
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xf8c
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:10:48.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xf24
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xf24,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28113,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:40:48 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28113
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xf24
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:10:48.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x934
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x934,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28112,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:40:48 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28112
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x934
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:10:48.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xef0
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xef0,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28111,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:40:48 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28111
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xef0
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:10:48.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xac4
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xac4,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28110,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:40:48 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28110
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0xac4
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:10:48.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x8f8
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x8f8,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28109,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:40:48 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28109
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x8f8
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:10:48.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"IIS APPPOOL",joomla,"we1149srv.waynecorpinc.local",0x7b0,4688,0,"Audit Success",Security,0x88AFC,"A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x6b4
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x6b4,"C:\Program Files (x86)\PHP\v5.5\php-cgi.exe",Info,"""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""",28108,"IIS APPPOOL\joomla","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/10/2016 02:40:46 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we1149srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=28108
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		IIS APPPOOL\joomla
+	Account Name:		joomla
+	Account Domain:		IIS APPPOOL
+	Logon ID:		0x88AFC
+
+Process Information:
+	New Process ID:		0x6b4
+	New Process Name:	C:\Program Files (x86)\PHP\v5.5\php-cgi.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7b0
+	Process Command Line:	""C:\Program Files (x86)\PHP\v5.5\php-cgi.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:10:46.000+0530",,we1149srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,

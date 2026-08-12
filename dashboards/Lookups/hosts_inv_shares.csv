@@ -1,0 +1,10 @@
+host,"Share_Name",count
+we9041srv,"\\*\fileshare",16905
+we9041srv,"\\*\C$",3973
+we8105desk,"\\*\IPC$",1206
+we9041srv,"\\*\IPC$",1160
+we8105desk,"\\*\C$",1075
+we9041srv,"\\*\SYSVOL",72
+we9041srv,"\\*\ADMIN$",22
+we8105desk,"\\*\ADMIN$",13
+we9041srv,"\\*\NETLOGON",4

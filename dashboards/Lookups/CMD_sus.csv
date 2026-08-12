@@ -1,0 +1,2345 @@
+"Account_Domain","Account_Name",ComputerName,"Creator_Process_ID","Creator_Process_Name",EventCode,EventType,Keywords,LogName,"Logon_ID","Mandatory_Label",Message,"New_Process_ID","New_Process_Name",OpCode,"Process_Command_Line",RecordNumber,"Security_ID",SourceName,TaskCategory,"Token_Elevation_Type",Type,"_raw","_time",eventtype,host,index,linecount,punct,source,sourcetype,"splunk_server","splunk_server_group",tag,"tag::eventtype"
+WAYNECORPINC,"bob.smith","we8105desk.waynecorpinc.local",0xe04,,4688,0,"Audit Success",Security,0x6f7ba,,"A new process has been created.
+
+Subject:
+	Security ID:		WAYNECORPINC\bob.smith
+	Account Name:		bob.smith
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x6f7ba
+
+Process Information:
+	New Process ID:		0x1398
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeFull (2)
+	Creator Process ID:	0xe04
+	Process Command Line:	/d /c taskkill /t /f /im ""osk.exe"" > NUL & ping -n 1 127.0.0.1 > NUL & del ""C:\Users\bob.smith.WAYNECORPINC\AppData\Roaming\{35ACA89F-933F-6A5D-2776-A3589FB99832}\osk.exe"" > NUL
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x1398,"C:\Windows\System32\cmd.exe",Info,"/d /c taskkill /t /f /im ""osk.exe"" > NUL & ping -n 1 127.0.0.1 > NUL & del ""C:\Users\bob.smith.WAYNECORPINC\AppData\Roaming\{35ACA89F-933F-6A5D-2776-A3589FB99832}\osk.exe"" > NUL",38108,"WAYNECORPINC\bob.smith","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeFull (2)",Information,"08/24/2016 11:15:29 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=38108
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		WAYNECORPINC\bob.smith
+	Account Name:		bob.smith
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x6f7ba
+
+Process Information:
+	New Process ID:		0x1398
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeFull (2)
+	Creator Process ID:	0xe04
+	Process Command Line:	/d /c taskkill /t /f /im ""osk.exe"" > NUL & ping -n 1 127.0.0.1 > NUL & del ""C:\Users\bob.smith.WAYNECORPINC\AppData\Roaming\{35ACA89F-933F-6A5D-2776-A3589FB99832}\osk.exe"" > NUL
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:45:29.000+0530",,we8105desk,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE8105DESK$","we8105desk.waynecorpinc.local",0x7ec,,4688,0,"Audit Success",Security,0x3e7,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e7
+
+Process Information:
+	New Process ID:		0x4b8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7ec
+	Process Command Line:	cmd /c C:\Windows\temp\nessus_W7GLH62C.bat
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x4b8,"C:\Windows\System32\cmd.exe",Info,"cmd /c C:\Windows\temp\nessus_W7GLH62C.bat",34817,"NT AUTHORITY\SYSTEM","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 10:36:44 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=34817
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e7
+
+Process Information:
+	New Process ID:		0x4b8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x7ec
+	Process Command Line:	cmd /c C:\Windows\temp\nessus_W7GLH62C.bat
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:06:44.000+0530",,we8105desk,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE9041SRV$","we9041srv.waynecorpinc.local",0x330,,4688,0,"Audit Success",Security,0x3E7,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	New Process ID:		0xf30
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x330
+	Process Command Line:	cmd /c C:\Windows\temp\nessus_ZCHPYH15.bat
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xf30,"C:\Windows\System32\cmd.exe",Info,"cmd /c C:\Windows\temp\nessus_ZCHPYH15.bat",1091165,"NT AUTHORITY\SYSTEM","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 09:36:02 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we9041srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=1091165
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Process Information:
+	New Process ID:		0xf30
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x330
+	Process Command Line:	cmd /c C:\Windows\temp\nessus_ZCHPYH15.bat
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:06:02.000+0530",,we9041srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE8105DESK$","we8105desk.waynecorpinc.local",0x5ec,,4688,0,"Audit Success",Security,0x3e4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e4
+
+Process Information:
+	New Process ID:		0x904
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x5ec
+	Process Command Line:	cmd /c ""schtasks /query /XML > %SystemRoot%\TEMP\nessus_VPG2T4UF.TMP & ren %SystemRoot%\TEMP\nessus_VPG2T4UF.TMP nessus_VPG2T4UF.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x904,"C:\Windows\System32\cmd.exe",Info,"cmd /c ""schtasks /query /XML > %SystemRoot%\TEMP\nessus_VPG2T4UF.TMP & ren %SystemRoot%\TEMP\nessus_VPG2T4UF.TMP nessus_VPG2T4UF.TXT""",31639,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 10:35:36 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=31639
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e4
+
+Process Information:
+	New Process ID:		0x904
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x5ec
+	Process Command Line:	cmd /c ""schtasks /query /XML > %SystemRoot%\TEMP\nessus_VPG2T4UF.TMP & ren %SystemRoot%\TEMP\nessus_VPG2T4UF.TMP nessus_VPG2T4UF.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:05:36.000+0530",,we8105desk,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,Administrator,"we8105desk.waynecorpinc.local",0x740,,4688,0,"Audit Success",Security,0x2bb982,,"A new process has been created.
+
+Subject:
+	Security ID:		WAYNECORPINC\Administrator
+	Account Name:		Administrator
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x2bb982
+
+Process Information:
+	New Process ID:		0x3e4
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x740
+	Process Command Line:	cmd  /c netsh advfirewall show allprofiles firewallpolicy  
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x3e4,"C:\Windows\System32\cmd.exe",Info,"cmd  /c netsh advfirewall show allprofiles firewallpolicy",30124,"WAYNECORPINC\Administrator","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 10:34:56 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=30124
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		WAYNECORPINC\Administrator
+	Account Name:		Administrator
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x2bb982
+
+Process Information:
+	New Process ID:		0x3e4
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x740
+	Process Command Line:	cmd  /c netsh advfirewall show allprofiles firewallpolicy  
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:04:56.000+0530",,we8105desk,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE8105DESK$","we8105desk.waynecorpinc.local",0x5ec,,4688,0,"Audit Success",Security,0x3e4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e4
+
+Process Information:
+	New Process ID:		0x740
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x5ec
+	Process Command Line:	cmd /c netsh advfirewall firewall show rule name=all verbose > %SystemRoot%\TEMP\nessus_OCREA4YZ.TMP & cmd /c netsh advfirewall show allprofiles firewallpolicy >> %SystemRoot%\TEMP\nessus_OCREA4YZ.TMP & move %SystemRoot%\TEMP\nessus_OCREA4YZ.TMP %SystemRoot%\TEMP\nessus_OCREA4YZ.TXT
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x740,"C:\Windows\System32\cmd.exe",Info,"cmd /c netsh advfirewall firewall show rule name=all verbose > %SystemRoot%\TEMP\nessus_OCREA4YZ.TMP & cmd /c netsh advfirewall show allprofiles firewallpolicy >> %SystemRoot%\TEMP\nessus_OCREA4YZ.TMP & move %SystemRoot%\TEMP\nessus_OCREA4YZ.TMP %SystemRoot%\TEMP\nessus_OCREA4YZ.TXT",30113,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 10:34:55 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=30113
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e4
+
+Process Information:
+	New Process ID:		0x740
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x5ec
+	Process Command Line:	cmd /c netsh advfirewall firewall show rule name=all verbose > %SystemRoot%\TEMP\nessus_OCREA4YZ.TMP & cmd /c netsh advfirewall show allprofiles firewallpolicy >> %SystemRoot%\TEMP\nessus_OCREA4YZ.TMP & move %SystemRoot%\TEMP\nessus_OCREA4YZ.TMP %SystemRoot%\TEMP\nessus_OCREA4YZ.TXT
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:04:55.000+0530",,we8105desk,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE9041SRV$","we9041srv.waynecorpinc.local",0xd60,,4688,0,"Audit Success",Security,0x3E4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0x7e8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c ""schtasks /query /XML > %SystemRoot%\TEMP\nessus_W426FMMY.TMP & ren %SystemRoot%\TEMP\nessus_W426FMMY.TMP nessus_W426FMMY.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x7e8,"C:\Windows\System32\cmd.exe",Info,"cmd /c ""schtasks /query /XML > %SystemRoot%\TEMP\nessus_W426FMMY.TMP & ren %SystemRoot%\TEMP\nessus_W426FMMY.TMP nessus_W426FMMY.TXT""",1086816,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 09:34:50 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we9041srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=1086816
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0x7e8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c ""schtasks /query /XML > %SystemRoot%\TEMP\nessus_W426FMMY.TMP & ren %SystemRoot%\TEMP\nessus_W426FMMY.TMP nessus_W426FMMY.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:04:50.000+0530",,we9041srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE8105DESK$","we8105desk.waynecorpinc.local",0x5ec,,4688,0,"Audit Success",Security,0x3e4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e4
+
+Process Information:
+	New Process ID:		0xd38
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x5ec
+	Process Command Line:	cmd /c ""tasklist /svc > %SystemRoot%\TEMP\nessus_task_listY42QJDIQ.TMP & ren %SystemRoot%\TEMP\nessus_task_listY42QJDIQ.TMP nessus_task_listY42QJDIQ.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xd38,"C:\Windows\System32\cmd.exe",Info,"cmd /c ""tasklist /svc > %SystemRoot%\TEMP\nessus_task_listY42QJDIQ.TMP & ren %SystemRoot%\TEMP\nessus_task_listY42QJDIQ.TMP nessus_task_listY42QJDIQ.TXT""",29732,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 10:34:21 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=29732
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e4
+
+Process Information:
+	New Process ID:		0xd38
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x5ec
+	Process Command Line:	cmd /c ""tasklist /svc > %SystemRoot%\TEMP\nessus_task_listY42QJDIQ.TMP & ren %SystemRoot%\TEMP\nessus_task_listY42QJDIQ.TMP nessus_task_listY42QJDIQ.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:04:21.000+0530",,we8105desk,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE9041SRV$","we9041srv.waynecorpinc.local",0xd60,,4688,0,"Audit Success",Security,0x3E4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0xbc8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c powershell ""Get-AppxPackage -AllUsers | select name, version, architecture, publisher | Format-List | out-string -width 4096"" > %SystemRoot%\TEMP\nessus_R3OP3JQV.TMP & move %SystemRoot%\TEMP\nessus_R3OP3JQV.TMP %SystemRoot%\TEMP\nessus_R3OP3JQV.TXT
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xbc8,"C:\Windows\System32\cmd.exe",Info,"cmd /c powershell ""Get-AppxPackage -AllUsers | select name, version, architecture, publisher | Format-List | out-string -width 4096"" > %SystemRoot%\TEMP\nessus_R3OP3JQV.TMP & move %SystemRoot%\TEMP\nessus_R3OP3JQV.TMP %SystemRoot%\TEMP\nessus_R3OP3JQV.TXT",1085158,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 09:34:14 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we9041srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=1085158
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0xbc8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c powershell ""Get-AppxPackage -AllUsers | select name, version, architecture, publisher | Format-List | out-string -width 4096"" > %SystemRoot%\TEMP\nessus_R3OP3JQV.TMP & move %SystemRoot%\TEMP\nessus_R3OP3JQV.TMP %SystemRoot%\TEMP\nessus_R3OP3JQV.TXT
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:04:14.000+0530",,we9041srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,Administrator,"we9041srv.waynecorpinc.local",0xefc,,4688,0,"Audit Success",Security,0x11491DBE,,"A new process has been created.
+
+Subject:
+	Security ID:		WAYNECORPINC\Administrator
+	Account Name:		Administrator
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x11491DBE
+
+Process Information:
+	New Process ID:		0xa88
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xefc
+	Process Command Line:	cmd  /c netsh advfirewall show allprofiles firewallpolicy  
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xa88,"C:\Windows\System32\cmd.exe",Info,"cmd  /c netsh advfirewall show allprofiles firewallpolicy",1084961,"WAYNECORPINC\Administrator","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 09:34:11 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we9041srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=1084961
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		WAYNECORPINC\Administrator
+	Account Name:		Administrator
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x11491DBE
+
+Process Information:
+	New Process ID:		0xa88
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xefc
+	Process Command Line:	cmd  /c netsh advfirewall show allprofiles firewallpolicy  
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:04:11.000+0530",,we9041srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE9041SRV$","we9041srv.waynecorpinc.local",0xd60,,4688,0,"Audit Success",Security,0x3E4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0xefc
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c netsh advfirewall firewall show rule name=all verbose > %SystemRoot%\TEMP\nessus_SV9VMSPT.TMP & cmd /c netsh advfirewall show allprofiles firewallpolicy >> %SystemRoot%\TEMP\nessus_SV9VMSPT.TMP & move %SystemRoot%\TEMP\nessus_SV9VMSPT.TMP %SystemRoot%\TEMP\nessus_SV9VMSPT.TXT
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xefc,"C:\Windows\System32\cmd.exe",Info,"cmd /c netsh advfirewall firewall show rule name=all verbose > %SystemRoot%\TEMP\nessus_SV9VMSPT.TMP & cmd /c netsh advfirewall show allprofiles firewallpolicy >> %SystemRoot%\TEMP\nessus_SV9VMSPT.TMP & move %SystemRoot%\TEMP\nessus_SV9VMSPT.TMP %SystemRoot%\TEMP\nessus_SV9VMSPT.TXT",1084949,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 09:34:11 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we9041srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=1084949
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0xefc
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c netsh advfirewall firewall show rule name=all verbose > %SystemRoot%\TEMP\nessus_SV9VMSPT.TMP & cmd /c netsh advfirewall show allprofiles firewallpolicy >> %SystemRoot%\TEMP\nessus_SV9VMSPT.TMP & move %SystemRoot%\TEMP\nessus_SV9VMSPT.TMP %SystemRoot%\TEMP\nessus_SV9VMSPT.TXT
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:04:11.000+0530",,we9041srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE8105DESK$","we8105desk.waynecorpinc.local",0x5ec,,4688,0,"Audit Success",Security,0x3e4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e4
+
+Process Information:
+	New Process ID:		0x41c
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x5ec
+	Process Command Line:	cmd /c netsh wlan show interface > %SystemRoot%\TEMP\nessus_IQK9FYH1.TMP & move %SystemRoot%\TEMP\nessus_IQK9FYH1.TMP %SystemRoot%\TEMP\nessus_IQK9FYH1.TXT
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x41c,"C:\Windows\System32\cmd.exe",Info,"cmd /c netsh wlan show interface > %SystemRoot%\TEMP\nessus_IQK9FYH1.TMP & move %SystemRoot%\TEMP\nessus_IQK9FYH1.TMP %SystemRoot%\TEMP\nessus_IQK9FYH1.TXT",29651,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 10:34:05 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=29651
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e4
+
+Process Information:
+	New Process ID:		0x41c
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x5ec
+	Process Command Line:	cmd /c netsh wlan show interface > %SystemRoot%\TEMP\nessus_IQK9FYH1.TMP & move %SystemRoot%\TEMP\nessus_IQK9FYH1.TMP %SystemRoot%\TEMP\nessus_IQK9FYH1.TXT
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:04:05.000+0530",,we8105desk,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE8105DESK$","we8105desk.waynecorpinc.local",0x5ec,,4688,0,"Audit Success",Security,0x3e4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e4
+
+Process Information:
+	New Process ID:		0x290
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x5ec
+	Process Command Line:	cmd /c ""netstat -ano > %SystemRoot%\TEMP\nessus_4UC962OK.TMP & ren %SystemRoot%\TEMP\nessus_4UC962OK.TMP nessus_4UC962OK.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x290,"C:\Windows\System32\cmd.exe",Info,"cmd /c ""netstat -ano > %SystemRoot%\TEMP\nessus_4UC962OK.TMP & ren %SystemRoot%\TEMP\nessus_4UC962OK.TMP nessus_4UC962OK.TXT""",29477,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 10:33:53 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=29477
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3e4
+
+Process Information:
+	New Process ID:		0x290
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0x5ec
+	Process Command Line:	cmd /c ""netstat -ano > %SystemRoot%\TEMP\nessus_4UC962OK.TMP & ren %SystemRoot%\TEMP\nessus_4UC962OK.TMP nessus_4UC962OK.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:03:53.000+0530",,we8105desk,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE9041SRV$","we9041srv.waynecorpinc.local",0xd60,,4688,0,"Audit Success",Security,0x3E4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0xe88
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c ""tasklist /svc > %SystemRoot%\TEMP\nessus_task_listI8RC8S8K.TMP & ren %SystemRoot%\TEMP\nessus_task_listI8RC8S8K.TMP nessus_task_listI8RC8S8K.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xe88,"C:\Windows\System32\cmd.exe",Info,"cmd /c ""tasklist /svc > %SystemRoot%\TEMP\nessus_task_listI8RC8S8K.TMP & ren %SystemRoot%\TEMP\nessus_task_listI8RC8S8K.TMP nessus_task_listI8RC8S8K.TXT""",1083551,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 09:33:44 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we9041srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=1083551
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0xe88
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c ""tasklist /svc > %SystemRoot%\TEMP\nessus_task_listI8RC8S8K.TMP & ren %SystemRoot%\TEMP\nessus_task_listI8RC8S8K.TMP nessus_task_listI8RC8S8K.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:03:44.000+0530",,we9041srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE9041SRV$","we9041srv.waynecorpinc.local",0xd60,,4688,0,"Audit Success",Security,0x3E4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0x750
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c netsh wlan show interface > %SystemRoot%\TEMP\nessus_JMJL39S5.TMP & move %SystemRoot%\TEMP\nessus_JMJL39S5.TMP %SystemRoot%\TEMP\nessus_JMJL39S5.TXT
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x750,"C:\Windows\System32\cmd.exe",Info,"cmd /c netsh wlan show interface > %SystemRoot%\TEMP\nessus_JMJL39S5.TMP & move %SystemRoot%\TEMP\nessus_JMJL39S5.TMP %SystemRoot%\TEMP\nessus_JMJL39S5.TXT",1083450,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 09:33:30 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we9041srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=1083450
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0x750
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c netsh wlan show interface > %SystemRoot%\TEMP\nessus_JMJL39S5.TMP & move %SystemRoot%\TEMP\nessus_JMJL39S5.TMP %SystemRoot%\TEMP\nessus_JMJL39S5.TXT
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:03:30.000+0530",,we9041srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+WAYNECORPINC,"WE9041SRV$","we9041srv.waynecorpinc.local",0xd60,,4688,0,"Audit Success",Security,0x3E4,,"A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0xaf0
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c ""netstat -ano > %SystemRoot%\TEMP\nessus_4LX6EPAV.TMP & ren %SystemRoot%\TEMP\nessus_4LX6EPAV.TMP nessus_4LX6EPAV.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xaf0,"C:\Windows\System32\cmd.exe",Info,"cmd /c ""netstat -ano > %SystemRoot%\TEMP\nessus_4LX6EPAV.TMP & ren %SystemRoot%\TEMP\nessus_4LX6EPAV.TMP nessus_4LX6EPAV.TXT""",1083258,"NT AUTHORITY\NETWORK SERVICE","Microsoft Windows security auditing.","Process Creation","TokenElevationTypeDefault (1)",Information,"08/24/2016 09:33:22 AM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we9041srv.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=1083258
+Keywords=Audit Success
+Message=A new process has been created.
+
+Subject:
+	Security ID:		NT AUTHORITY\NETWORK SERVICE
+	Account Name:		WE9041SRV$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E4
+
+Process Information:
+	New Process ID:		0xaf0
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	TokenElevationTypeDefault (1)
+	Creator Process ID:	0xd60
+	Process Command Line:	cmd /c ""netstat -ano > %SystemRoot%\TEMP\nessus_4LX6EPAV.TMP & ren %SystemRoot%\TEMP\nessus_4LX6EPAV.TMP nessus_4LX6EPAV.TXT""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-24T22:03:22.000+0530",,we9041srv,botsv1,33,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r:\r\rt","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1358
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\powershell2.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x1358,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\powershell2.cmd"" --scheme""",493618,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:36 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493618
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1358
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\powershell2.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:36.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x114c
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\powershell.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x114c,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\powershell.cmd"" --scheme""",493609,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:36 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493609
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x114c
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\powershell.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:36.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xe10
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\perfmon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xe10,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\perfmon.cmd"" --scheme""",493605,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:35 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493605
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xe10
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\perfmon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:35.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xca4
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\admon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xca4,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\admon.cmd"" --scheme""",493603,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:35 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493603
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xca4
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\admon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:35.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x13f8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinRegMon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x13f8,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinRegMon.cmd"" --scheme""",493601,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:35 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493601
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x13f8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinRegMon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:35.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x13cc
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinPrintMon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x13cc,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinPrintMon.cmd"" --scheme""",493599,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:35 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493599
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x13cc
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinPrintMon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:35.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1374
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinNetMon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x1374,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinNetMon.cmd"" --scheme""",493594,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:35 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493594
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1374
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinNetMon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:35.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1350
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinHostMon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x1350,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinHostMon.cmd"" --scheme""",493592,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:35 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493592
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1350
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinHostMon.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:35.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x133c
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinEventLog.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x133c,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinEventLog.cmd"" --scheme""",493590,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:35 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493590
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x133c
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\WinEventLog.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:35.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x12e8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\MonitorNoHandle.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x12e8,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\MonitorNoHandle.cmd"" --scheme""",493588,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:35 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493588
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x12e8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c """"C:\Program Files\SplunkUniversalForwarder\etc\system\bin\MonitorNoHandle.cmd"" --scheme""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:35.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1250
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _internal check-xml-files --answer-yes --no-prompt 2>&1
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x1250,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _internal check-xml-files --answer-yes --no-prompt 2>&1",493574,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:34 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493574
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1250
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _internal check-xml-files --answer-yes --no-prompt 2>&1
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:34.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0xe94,"C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x11c0
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0xe94
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c btool server list general --no-log
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x11c0,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c btool server list general --no-log",493566,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:34 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493566
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x11c0
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0xe94
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c btool server list general --no-log
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:34.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0xe94,"C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1140
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0xe94
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c btool server list replication_port --no-log
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0x1140,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c btool server list replication_port --no-log",493559,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:33 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493559
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1140
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0xe94
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c btool server list replication_port --no-log
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:33.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+WAYNECORPINC","WE8105DESK$
+bob.smith","we8105desk.waynecorpinc.local",0x4a0,"C:\Windows\System32\igfxCUIService.exe",4688,0,"Audit Success",Security,"0x3E7
+0x44399","Mandatory Label\Medium Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		bob.smith
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x44399
+
+Process Information:
+	New Process ID:		0xf20
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x4a0
+	Creator Process Name:	C:\Windows\System32\igfxCUIService.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c ""C:\Windows\system32\{A6D608F0-0BDE-491A-97AE-5C4B05D86E01}.bat""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xf20,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c ""C:\Windows\system32\{A6D608F0-0BDE-491A-97AE-5C4B05D86E01}.bat""",493530,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:31 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493530
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		bob.smith
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x44399
+
+Process Information:
+	New Process ID:		0xf20
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x4a0
+	Creator Process Name:	C:\Windows\System32\igfxCUIService.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c ""C:\Windows\system32\{A6D608F0-0BDE-491A-97AE-5C4B05D86E01}.bat""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:31.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xe88
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _internal pre-flight-checks --answer-yes --no-prompt 2>&1
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xe88,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _internal pre-flight-checks --answer-yes --no-prompt 2>&1",493355,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:28 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=493355
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xe88
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _internal pre-flight-checks --answer-yes --no-prompt 2>&1
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:28.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0xc78,"C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xdf0
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0xc78
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c btool server list kvstore --no-log
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xdf0,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c btool server list kvstore --no-log",492904,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:27 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=492904
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xdf0
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0xc78
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c btool server list kvstore --no-log
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:27.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0xc78,"C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xda8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0xc78
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c btool server list general --no-log
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xda8,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c btool server list general --no-log",492858,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:27 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=492858
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xda8
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0xc78
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c btool server list general --no-log
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:27.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0xc78,"C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xc8c
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0xc78
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c btool web list settings --no-log
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xc8c,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c btool web list settings --no-log",492774,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:26 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=492774
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xc8c
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0xc78
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c btool web list settings --no-log
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:26.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xc6c
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _internal_extra_splunkd_service_args
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xc6c,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _internal_extra_splunkd_service_args",492772,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:26 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=492772
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xc6c
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _internal_extra_splunkd_service_args
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:26.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,
+"WAYNECORPINC
+-","WE8105DESK$
+-","we8105desk.waynecorpinc.local",0x71c,"C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe",4688,0,"Audit Success",Security,"0x3E7
+0x0","Mandatory Label\System Mandatory Level","A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xb00
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _RAW_envvars
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.",0xb00,"C:\Windows\System32\cmd.exe",Info,"C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _RAW_envvars",492736,"NT AUTHORITY\SYSTEM
+NULL SID","Microsoft Windows security auditing.","Process Creation","%%1936",Information,"08/10/2016 02:54:25 PM
+LogName=Security
+SourceName=Microsoft Windows security auditing.
+EventCode=4688
+EventType=0
+Type=Information
+ComputerName=we8105desk.waynecorpinc.local
+TaskCategory=Process Creation
+OpCode=Info
+RecordNumber=492736
+Keywords=Audit Success
+Message=A new process has been created.
+
+Creator Subject:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		WE8105DESK$
+	Account Domain:		WAYNECORPINC
+	Logon ID:		0x3E7
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0xb00
+	New Process Name:	C:\Windows\System32\cmd.exe
+	Token Elevation Type:	%%1936
+	Mandatory Label:		Mandatory Label\System Mandatory Level
+	Creator Process ID:	0x71c
+	Creator Process Name:	C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe
+	Process Command Line:	C:\Windows\system32\cmd.exe /c ""C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe"" _RAW_envvars
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy.
+
+Type 1 is a full token with no privileges removed or groups disabled.  A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account or a service account.
+
+Type 2 is an elevated token with no privileges removed or groups disabled.  An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator.  An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
+
+Type 3 is a limited token with administrative privileges removed and administrative groups disabled.  The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.","2016-08-11T03:24:25.000+0530",,we8105desk,botsv1,41,"//_::_\r=\r=___.\r=\r=\r=\r=..\r=_\r=\r=\r=_\r=_____.\r\r\r\r_:\r\r","WinEventLog:Security","WinEventLog:Security",JagadishJasti,,,

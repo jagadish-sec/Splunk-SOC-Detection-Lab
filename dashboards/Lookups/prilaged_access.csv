@@ -1,0 +1,13 @@
+"Account_Name",host,count
+Administrator,we8105desk,1200
+Administrator,we9041srv,1182
+"WE9041SRV$",we9041srv,659
+SYSTEM,we8105desk,26
+"WE8105DESK$",we8105desk,4
+"DWM-1",we8105desk,2
+"DWM-3",we1149srv,2
+SYSTEM,we9041srv,2
+"DWM-3",we9041srv,1
+"LOCAL SERVICE",we8105desk,1
+"NETWORK SERVICE",we8105desk,1
+"WE1149SRV$",we1149srv,1

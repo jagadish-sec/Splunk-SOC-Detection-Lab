@@ -1,0 +1,22 @@
+host,"Account_Name",count
+we9041srv,"-",1947
+we8105desk,"-",1223
+we8105desk,Administrator,1200
+we9041srv,Administrator,1182
+we9041srv,"WE9041SRV$",663
+we9041srv,"ANONYMOUS LOGON",42
+we9041srv,"WE8105DESK$",37
+we8105desk,"WE8105DESK$",36
+we8105desk,SYSTEM,27
+we8105desk,"ANONYMOUS LOGON",18
+we9041srv,"WE1149SRV$",16
+we9041srv,"bob.smith",11
+we1149srv,"WE1149SRV$",3
+we1149srv,"DWM-3",2
+we8105desk,"DWM-1",2
+we8105desk,"bob.smith",2
+we9041srv,"DWM-3",2
+we9041srv,SYSTEM,2
+we1149srv,"-",1
+we8105desk,"LOCAL SERVICE",1
+we8105desk,"NETWORK SERVICE",1

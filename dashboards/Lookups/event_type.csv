@@ -1,0 +1,9 @@
+"event_type",count
+alert,1360
+dns,7522
+fileinfo,18941
+flow,80241
+http,14341
+ssh,2
+stats,1431
+tls,1746
